@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+const pageTitle = "About me"
 ---
 
 <html lang="en">
@@ -8,14 +10,22 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>WazeCode</title>
+		<title>{pageTitle}</title>
+<style>
+	h1 {
+		color: purple;
+		font-size: 4rem;
+	}
+</style>
+
 	</head>
+
 	<body>
 		<a href="/">Home</a>
 		<a href="/about/">About</a>
 		<a href="/blog/">Blog</a>
-		<h1>WazeCode</h1>
-		<h2> About Me </h2>
+		<h1>LazyWaze </h1>
+		<h2>{pageTitle} </h2>
 		<p>
 			I am someone who likes to Code and this is a blog about the things I like.
 		</p>
