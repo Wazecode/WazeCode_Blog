@@ -1,8 +1,16 @@
 ---
-const platform = "Github";
-const username = "wazecode";
+import Social from './Social.astro'
 ---
 
 <footer>
-    <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+    <Social platform="Github" username="WazeCode"> </Social>
+    <Social platform="Youtube" username="WazeCode"> </Social>
 </footer>
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
